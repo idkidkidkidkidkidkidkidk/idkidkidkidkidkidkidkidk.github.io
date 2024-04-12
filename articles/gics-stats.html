@@ -20,11 +20,44 @@
         <div class="bg-gray-800 rounded p-6">
             <h1 class="text-3xl font-bold py-4">2024 尋找資安女婕思記分板分析</h1>
             <hr class="my-4 border-gray-500">
-            <p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae ligula vel arcu bibendum auctor ut sit amet dolor. Sed vitae lectus eu mi pulvinar volutpat. Integer convallis lorem nec elit faucibus, vel vehicula sem euismod.</p>
-			<div class="p-6 flourish-embed flourish-bar-chart-race" data-src="visualisation/17374662"></div>
-		</div>
+            <p class="text-lg">廢話不多說先上圖（手機建議橫著看）</p>
+            <!-- flourish 的 div 預設沒關 == -->
+            <div class="py-4 flourish-embed flourish-bar-chart-race" data-src="visualisation/17537955"></div>
+			<div class="py-4 flourish-embed flourish-bar-chart-race" data-src="visualisation/17538627"></div>
+            
+
+            <h2 class="text-2xl font-bold py-2">以下廢話</h2>
+            <p class="text-lg">去年幫自己挖了一個超級大的坑</p>
+            <img src="../img/wish.jpg">
+
+            <p class="text-lg">結果今年 API 還真的幾乎沒改，做事</p>
+
+            <h2 class="text-2xl font-bold py-4">資料來源</h2>
+            <p class="text-lg">
+                看起來很像是抓記分板，但我抓的其實是點個人資料時會出現的 top 50 隊伍和帳號<br>
+                蹭了新 AWS 帳號的免費 EC2 額度，在朋友幫忙 debug 下寫了 cronjob，每個整點和 30 分都抓一次資料owob
+            </p>
+
+            <h2 class="text-2xl font-bold py-4">資料整理</h2>
+            <p class="text-lg">
+                莫名其妙寫了很久，但基本上就寫個簡單程式把以分數為主的資料改成以隊伍或人為主<br>
+                完整資料還不確定要不要公開，如果有興趣可以戳我，整個抓下來的資料量大約是 500 KB，包含前 50 名的排名和分數<br>
+                把資料變成好看動畫的部分則是交給線上工具 <a class="text-blue-300" href="https://flourish.studio/">Flourish</a>，第一次用他，但我覺得很好用，大推owo/
+            </p>
+
+            <h2 class="text-2xl font-bold py-4">其他雜七雜八</h2>
+            <ul class="pl-6 list-disc">
+                <li>從這個表可以看到會打這個比賽的大學生兩三點可能都還醒著，但是五點到八點會睡下去</li>
+                <li>隊友發現土地顏色會對應隊伍最後一碼，圖上的長條是根據這個規則上顏色的</li>
+                <li>這次比賽理論上的隊伍最高分大約是 5163 分，截止至 04/13 01:00 最高分是 4765 分</li>
+                <li>理論上的個人最高分大約是 1721 分，截止至 04/13 01:00 最高分是 1655 分，很接近最高</li>
+                <li>預計會再抓新的資料更新這邊的圖，敬請期待ow&lt;</li>
+                <!-- 如果能繞掉記分板 freeze 我就繞 -->
+                <!-- <li>我知道這網站長的很醜 對不起QQ</li> -->
+            </ul>
+        </div>
     </div>
-    <footer class="bg-gray-600 py-4 text-white text-center mt-8">
+    <footer class="bg-gray-600 py-4 text-white text-center mt-8 sticky bottom-0">
         <a class="text-blue-300" href="https://github.com/idkidkidkidkidkidkidkidk/idkidkidkidkidkidkidkidk.github.io">Source</a>
         <p class="text-gray-400">請無視 Commit 時間</p>
     </footer>
